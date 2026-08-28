@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    container_name: cbtradersbd-api
+    restart: always
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
