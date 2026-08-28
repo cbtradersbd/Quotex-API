@@ -1,0 +1,17 @@
+{
+  "rsi_bb_strategy": {
+    "rsi_period": 14,
+    "rsi_overbought": 70,
+    "rsi_oversold": 30,
+    "bb_period": 20,
+    "bb_std": 2.0
+  },
+  "martingale": {
+    "enabled": true,
+    "max_steps": 2,
+    "multiplier": 2.2
+  },
+  "payout_filter": {
+    "min_payout_percentage": 85
+  }
+}
