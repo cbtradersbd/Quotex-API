@@ -1,0 +1,19 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "workers": 4
+  },
+  "broker": "Quotex",
+  "api_server": "https://api1.api.cbtraderbd.xyz/docs",
+  "ws_endpoint": "wss://api1.api.cbtraderbd.xyz/ws/quotex",
+  "reconnect_interval_sec": 5,
+  "candle_retention_days": 8,
+  "timezone": "UTC+6",
+  "telegram": {
+    "channel": "https://t.me/+R_kEsY9yqkA1NDI1",
+    "direct": "https://t.me/YouKnowWho_am",
+    "signal_bot": "https://t.me/cbsignalsproai_bot?start=1",
+    "verify_bot": "https://t.me/cbtradersbd_bot?start=1"
+  }
+}
