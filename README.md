@@ -6,9 +6,9 @@
 [![Direct Contact](https://img.shields.io/badge/Chat_on_Telegram-@YouKnowWho__am-blue?style=for-the-badge&logo=telegram)](https://t.me/YouKnowWho_am)
 [![AI Signals Bot Demo](https://img.shields.io/badge/Live_Signals_Bot-@cbsignalsproai__bot-red?style=for-the-badge&logo=telegram)](https://t.me/cbsignalsproai_bot?start=1)
 [![Account Verify Bot](https://img.shields.io/badge/Account_Verify_Bot-@cbtradersbd__bot-purple?style=for-the-badge&logo=telegram)](https://t.me/cbtradersbd_bot?start=1)
-[![FastAPI Swagger Docs](https://img.shields.io/badge/Live_API-FastAPI_Swagger-009688?style=for-the-badge&logo=fastapi)](https://api1.api.cbtraderbd.xyz/docs)
-[![Python Version](https://img.shields.io/badge/Python-3.10_|_3.11_|_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://api1.api.cbtraderbd.xyz/docs)
-[![Docker Support](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://api1.api.cbtraderbd.xyz/docs)
+[![FastAPI Swagger Docs](https://img.shields.io/badge/Live_API-FastAPI_Swagger-009688?style=for-the-badge&logo=fastapi)](https://api1.api.cbtradersbd.com/docs)
+[![Python Version](https://img.shields.io/badge/Python-3.10_|_3.11_|_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://api1.api.cbtradersbd.com/docs)
+[![Docker Support](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://api1.api.cbtradersbd.com/docs)
 [![License](https://img.shields.io/badge/License-Commercial_Source_Code-emerald?style=for-the-badge)](https://t.me/YouKnowWho_am)
 
 ---
@@ -42,7 +42,7 @@
 
 ## 🚀 Live API Interactive Swagger Documentation
 Experience the live production API server, test interactive Swagger requests, and inspect real-time schemas directly in your browser:  
-👉 **[https://api1.api.cbtraderbd.xyz/docs](https://api1.api.cbtraderbd.xyz/docs)**
+👉 **[https://api1.api.cbtradersbd.com/docs](https://api1.api.cbtradersbd.com/docs)**
 
 ---
 
@@ -62,7 +62,7 @@ You can immediately test our algorithms and automated account systems on Telegra
 ```
 ┌────────────────────────────────────────────────────────┐
 │                   CB TRADERS BD GATEWAY                │
-│       https://api1.api.cbtraderbd.xyz/docs             │
+│       https://api1.api.cbtradersbd.com/docs             │
 └──────────────┬──────────────────────────┬──────────────┘
                │                          │
        REST API Requests          WebSocket Stream (WSS)
@@ -179,7 +179,7 @@ docker-compose up -d --build
 
 ```ini
 # .env Configuration File
-API_BASE_URL=https://api1.api.cbtraderbd.xyz
+API_BASE_URL=https://api1.api.cbtradersbd.com
 API_KEY=cb_traders_bd_license_unlocked
 BROKER=quotex
 DEFAULT_TIMEFRAME=1m
@@ -199,7 +199,7 @@ TELEGRAM_CHAT_ID=@your_channel
 from src.core.client import BrokerApiClient
 from src.utils.logger import logger
 
-client = BrokerApiClient(base_url="https://api1.api.cbtraderbd.xyz/docs")
+client = BrokerApiClient(base_url="https://api1.api.cbtradersbd.com/docs")
 price_data = client.get_live_price("EURUSD_otc")
 logger.info(f"Live Tick: {price_data}")
 ```

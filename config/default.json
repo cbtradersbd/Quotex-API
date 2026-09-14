@@ -5,8 +5,8 @@
     "workers": 4
   },
   "broker": "Quotex",
-  "api_server": "https://api1.api.cbtraderbd.xyz/docs",
-  "ws_endpoint": "wss://api1.api.cbtraderbd.xyz/ws/quotex",
+  "api_server": "https://api1.api.cbtradersbd.com/docs",
+  "ws_endpoint": "wss://api1.api.cbtradersbd.com/ws/quotex",
   "reconnect_interval_sec": 5,
   "candle_retention_days": 8,
   "timezone": "UTC+6",

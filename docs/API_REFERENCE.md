@@ -1,6 +1,6 @@
 # 📖 Quotex API Reference & Payload Specifications
 
-Live Swagger documentation is hosted at: [https://api1.api.cbtraderbd.xyz/docs](https://api1.api.cbtraderbd.xyz/docs)
+Live Swagger documentation is hosted at: [https://api1.api.cbtradersbd.com/docs](https://api1.api.cbtradersbd.com/docs)
 
 ### Endpoints List:
 - `GET /docs` - Interactive UI

@@ -3,7 +3,7 @@ import json
 import time
 
 class BrokerApiClient:
-    def __init__(self, base_url="https://api1.api.cbtraderbd.xyz/docs"):
+    def __init__(self, base_url="https://api1.api.cbtradersbd.com/docs"):
         self.base_url = base_url
         self.session = requests.Session()
 

@@ -2,7 +2,7 @@
 import requests
 
 class SessionManager:
-    def __init__(self, api_url="https://api1.api.cbtraderbd.xyz/docs"):
+    def __init__(self, api_url="https://api1.api.cbtradersbd.com/docs"):
         self.api_url = api_url
         self.session = requests.Session()
 

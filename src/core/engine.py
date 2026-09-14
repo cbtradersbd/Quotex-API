@@ -10,7 +10,7 @@ app = FastAPI(
 
 @app.get("/")
 def root():
-    return {"status": "online", "broker": "Quotex", "docs": "https://api1.api.cbtraderbd.xyz/docs", "developer": "https://t.me/YouKnowWho_am"}
+    return {"status": "online", "broker": "Quotex", "docs": "https://api1.api.cbtradersbd.com/docs", "developer": "https://t.me/YouKnowWho_am"}
 
 @app.get("/api/live-price")
 def get_price(pair: str = "EURUSD_otc"):
