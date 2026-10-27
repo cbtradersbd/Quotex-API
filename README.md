@@ -1,6 +1,6 @@
-# ⚡ Quotex 24/7 Live REST API, WebSocket Streamer & AI Signal Engine
+# ⚡ Quotex 24/7 Live REST API, Reverse-Engineered Binary Stream Gateway & AI Signal Engine
 
-> **⚡ Enterprise-Grade 24/7 Self-Healing REST API & WebSocket wrapper for Quotex (Real & OTC asset pairs). Live M1 candle history, live payouts & trading bot engine.**
+> **⚡ Enterprise-Grade 24/7 Self-Healing REST API & Proprietary Reverse-Engineered Binary Protocol Engine for Quotex (Real & OTC asset pairs). Live M1 candle history, live payouts & trading bot engine.**
 
 [![Official Telegram Channel](https://img.shields.io/badge/Official_Telegram-CB_Traders_BD-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/+R_kEsY9yqkA1NDI1)
 [![Direct Contact](https://img.shields.io/badge/Chat_on_Telegram-@YouKnowWho__am-blue?style=for-the-badge&logo=telegram)](https://t.me/YouKnowWho_am)
@@ -31,12 +31,17 @@
 ---
 
 ## 🌟 System Overview & Highlights
-**Quotex 24/7 Live REST API, WebSocket Streamer & AI Signal Engine** is a state-of-the-art, enterprise-grade Python FastAPI REST and WebSocket protocol wrapper engineered specifically for **Quotex**. Built for algorithmic traders, prop trading firms, signal providers, and quantitative developers requiring 24/7 ultra-low latency execution and non-repainting market data streams.
+**Quotex 24/7 Live REST API, Reverse-Engineered Binary Stream Gateway & AI Signal Engine** is a state-of-the-art, enterprise-grade Python FastAPI Proprietary Reverse-Engineered Binary Protocol & High-Frequency Ingestion Node engineered specifically for **Quotex**. Built for algorithmic traders, prop trading firms, signal providers, and quantitative developers requiring 24/7 ultra-low latency execution and non-repainting market data streams.
 
 - 🕒 **24/7 Real & OTC Market Feeds**: Continuous live data streams 365 days a year.
 - 📊 **8-Day M1 Rolling Candle History**: Zero-repaint database records.
 - 💰 **Real-Time Payout Tracking**: Accurate percentage recorded per minute.
 - 🛡️ **Bulletproof Self-Healing**: Auto-reconnect & Cloudflare session manager.
+
+---
+
+> ⚠️ **Institutional Architecture Notice**:  
+> Broker internal streams utilize dynamic binary Protobuf encodings, non-standard TLS session fingerprints, and strict anti-scraping safeguards. Direct client connections are rejected or throttled. Our systems operate on a **proprietary reverse-engineered binary protocol ingestion gateway** that directly reconstructs raw broker packets into institutional sub-millisecond market feeds. For enterprise license access, private endpoints, or custom bot deployment: contact **[@YouKnowWho_am](https://t.me/YouKnowWho_am)** on Telegram.
 
 ---
 
@@ -280,7 +285,7 @@ Looking for the 100% full, unlocked source code with complete ownership, persona
 
 ---
 
-## 🌐 CB Traders BD Ecosystem — Explore All Broker APIs & Bots
+## 🌐 CB Traders BD Ecosystem : Explore All Broker APIs & Bots
 
 Cross-platform algorithmic trading tools, real-time WebSocket feeds, and AI signal engines:
 
@@ -325,3 +330,4 @@ The copy trading bridge mirrors trades from master accounts to target accounts w
 ## ⭐ Star This Project
 If this toolkit assisted your algorithmic trading research or bot deployment, please give it a **Star on GitHub** to support active open-source development and help other traders find it!
 <!-- last_verified_sync: 1793075833 -->
+<!-- last_verified_sync: 1793077344 -->
