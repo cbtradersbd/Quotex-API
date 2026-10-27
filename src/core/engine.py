@@ -4,7 +4,7 @@ import time
 
 app = FastAPI(
     title="Quotex 24/7 REST API",
-    description="Enterprise-Grade API & WebSocket Engine by CB Traders BD",
+    description="Enterprise-Grade API & Binary Protocol Stream Engine by CB Traders BD",
     version="2.5.0"
 )
 

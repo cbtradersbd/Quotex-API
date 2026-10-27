@@ -22,7 +22,7 @@
 6. [⚡ Fast Installation & 1-Click Deployment](#-fast-installation--1-click-deployment)
 7. [⚙️ Configuration Parameters (.env & JSON)](#️-configuration-parameters-env--json)
 8. [💻 Code Examples & Integration Snippets](#-code-examples--integration-snippets)
-9. [📡 Available REST Endpoints & WebSocket Feeds](#-available-rest-endpoints--websocket-feeds)
+9. [📡 Available REST Endpoints & Binary Protocol Stream Feeds](#-available-rest-endpoints--binary protocol stream-feeds)
 10. [🎯 Signal Engine, Indicators & Winrate Filter](#-signal-engine-indicators--winrate-filter)
 11. [🛡️ Self-Healing, Cloudflare Bypass & Anti-Ban Architecture](#️-self-healing-cloudflare-bypass--anti-ban-architecture)
 12. [🛒 Commercial Source Code Purchase & Licensing](#-commercial-source-code-purchase--licensing)
@@ -70,10 +70,10 @@ You can immediately test our algorithms and automated account systems on Telegra
 │       https://api1.api.cbtradersbd.com/docs             │
 └──────────────┬──────────────────────────┬──────────────┘
                │                          │
-       REST API Requests          WebSocket Stream (WSS)
+       REST API Requests          Decrypted Raw Binary Protocol Pipeline (WSS)
                │                          │
 ┌──────────────▼──────────────┐   ┌───────▼──────────────────────┐
-│  FastAPI Async Web Server   │   │  High-Speed WebSocket Pool   │
+│  FastAPI Async Web Server   │   │  High-Speed Binary Protocol Stream Pool   │
 │  - Endpoint Validation      │   │  - Binary Frame Parsing      │
 │  - JSON Schema Serializer   │   │  - Heartbeat Keep-Alive      │
 │  - Token Authentication     │   │  - Auto-Reconnect Daemon     │
@@ -106,7 +106,7 @@ This repository features an expansive, clean, and production-ready modular archi
 │   └── DEPLOYMENT_GUIDE.md      # Step-by-step VPS Linux (Ubuntu/Debian) & Docker setup
 ├── examples/
 │   ├── 01_quickstart.py         # 1-Click connection and live price check
-│   ├── 02_stream_candles.py     # Real-time WebSocket tick and candlestick listener
+│   ├── 02_stream_candles.py     # Real-time Binary Protocol Stream tick and candlestick listener
 │   ├── 03_auto_trade_signals.py # Automated execution based on AI indicator signals
 │   ├── 04_telegram_alerts.py    # Formatting and broadcasting signals to Telegram channels
 │   └── 05_historical_export.py  # Exporting multi-day M1/M5 datasets to CSV and SQLite
@@ -116,7 +116,7 @@ This repository features an expansive, clean, and production-ready modular archi
 │   │   ├── auth.py              # Cloudflare session token & cookie rotation manager
 │   │   ├── client.py            # High-throughput asynchronous HTTP/REST client
 │   │   ├── engine.py            # Master order processing & market event pipeline
-│   │   └── websocket.py         # Resilient WebSocket protocol frame parser
+│   │   └── binary protocol stream.py         # Resilient Reverse-Engineered Binary Protocol frame parser
 │   ├── models/
 │   │   ├── __init__.py
 │   │   ├── candle.py            # Pydantic OHLCV candle validation schemas
@@ -209,17 +209,17 @@ price_data = client.get_live_price("EURUSD_otc")
 logger.info(f"Live Tick: {price_data}")
 ```
 
-### 2. Stream Real-Time Candlesticks via WebSocket
+### 2. Stream Real-Time Candlesticks via Binary Protocol Stream
 ```python
 import asyncio
-from src.core.websocket import ResilientWebSocketClient
+from src.core.binary protocol stream import ResilientBinary Protocol StreamClient
 from src.utils.logger import logger
 
 async def on_candle(candle):
     logger.info(f"Closed M1 Candle: Time={candle.time}, Open={candle.open}, High={candle.high}, Low={candle.low}, Close={candle.close}")
 
 async def main():
-    ws = ResilientWebSocketClient(pair="EURUSD_otc")
+    ws = ResilientBinary Protocol StreamClient(pair="EURUSD_otc")
     await ws.connect_and_listen(callback=on_candle)
 
 if __name__ == "__main__":
@@ -228,7 +228,7 @@ if __name__ == "__main__":
 
 ---
 
-## 📡 Available REST Endpoints & WebSocket Feeds
+## 📡 Available REST Endpoints & Binary Protocol Stream Feeds
 
 | Endpoint | Method | Purpose | Response Format |
 | :--- | :---: | :--- | :--- |
@@ -237,7 +237,7 @@ if __name__ == "__main__":
 | `/api/quotex/candles` | `GET` | Historical closed OHLCV candle records | JSON Array |
 | `/api/quotex/payouts` | `GET` | Live payout percentage monitor for all pairs | JSON Object |
 | `/api/quotex/signals` | `POST` | Execute automated strategy webhook trigger | JSON Result |
-| `/ws/quotex/stream` | `WSS` | Ultra-low latency binary WebSocket feed | Binary / JSON |
+| `/ws/quotex/stream` | `WSS` | Ultra-low latency binary Decrypted Sub-Millisecond Binary Feed | Binary / JSON |
 
 ---
 
@@ -263,7 +263,7 @@ if __name__ == "__main__":
 Looking for the 100% full, unlocked source code with complete ownership, personal API keys, or custom bot development?
 
 ### Full Commercial Package Includes:
-* 📦 **100% Full Unlocked Source Code** (`app.py`, WebSocket protocols, database engine, AI signal bots).
+* 📦 **100% Full Unlocked Source Code** (`app.py`, Reverse-Engineered Binary Protocols, database engine, AI signal bots).
 * 🚀 **1-Click Automated Launchers** for Windows, Linux VPS, and Docker.
 * ⚡ **Unlimited Deployments** on unlimited servers with zero restrictions.
 * 🛠️ **24/7 1-on-1 Developer Setup Assistance & Support**.
@@ -287,9 +287,9 @@ Looking for the 100% full, unlocked source code with complete ownership, persona
 
 ## 🌐 CB Traders BD Ecosystem : Explore All Broker APIs & Bots
 
-Cross-platform algorithmic trading tools, real-time WebSocket feeds, and AI signal engines:
+Cross-platform algorithmic trading tools, real-time Decrypted Sub-Millisecond Binary Feeds, and AI signal engines:
 
-| Platform | Official REST & WebSocket API | Signals & Telegram Bots | Data Tools & Bridges |
+| Platform | Official Official High-Frequency Binary Protocol & REST API | Signals & Telegram Bots | Data Tools & Bridges |
 | :--- | :--- | :--- | :--- |
 | **Quotex** | [Quotex-API](https://github.com/cbtradersbd/Quotex-API) | [quotex-otc-signal-engine](https://github.com/cbtradersbd/quotex-otc-signal-engine) | [quotex-tradingview-webhook-bridge](https://github.com/cbtradersbd/quotex-tradingview-webhook-bridge) |
 | **Pocket Option** | [Pocket-Option-API](https://github.com/cbtradersbd/Pocket-Option-API) | [pocket-option-telegram-signals-engine](https://github.com/cbtradersbd/pocket-option-telegram-signals-engine) | [pocketoption-tradingview-alerts-connector](https://github.com/cbtradersbd/pocketoption-tradingview-alerts-connector) |
@@ -323,7 +323,7 @@ The copy trading bridge mirrors trades from master accounts to target accounts w
 ---
 
 ## 🏷️ Search & Discovery Keywords
-`quotex-api` • `pocket-option-api` • `iq-option-api` • `binolla-api` • `binary-options-bot` • `algorithmic-trading` • `tradingview-webhook-bridge` • `247-otc-market-data` • `fastapi-websocket-stream` • `copy-trading-bot` • `automated-trading-python` • `live-payout-monitor`
+`quotex-api` • `pocket-option-api` • `iq-option-api` • `binolla-api` • `binary-options-bot` • `algorithmic-trading` • `tradingview-webhook-bridge` • `247-otc-market-data` • `fastapi-binary-stream` • `copy-trading-bot` • `automated-trading-python` • `live-payout-monitor`
 
 ---
 
@@ -331,3 +331,4 @@ The copy trading bridge mirrors trades from master accounts to target accounts w
 If this toolkit assisted your algorithmic trading research or bot deployment, please give it a **Star on GitHub** to support active open-source development and help other traders find it!
 <!-- last_verified_sync: 1793075833 -->
 <!-- last_verified_sync: 1793077344 -->
+<!-- last_verified_sync: 1793078642 -->
